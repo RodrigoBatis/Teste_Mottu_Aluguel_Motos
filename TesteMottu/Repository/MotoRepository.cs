@@ -40,10 +40,9 @@ public class MotoRepository : IMotoRepository
             return null;
         }
 
-        motoDb.Placa = moto.Placa; // Atualize os campos conforme necessário
+        motoDb.Placa = moto.Placa;
         motoDb.Modelo = moto.Modelo;
         motoDb.Ano = moto.Ano;
-        // Outros campos...
 
         await _dbContext.SaveChangesAsync();
         return motoDb;

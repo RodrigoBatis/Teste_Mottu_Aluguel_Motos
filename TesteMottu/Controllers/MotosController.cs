@@ -67,14 +67,4 @@ public class MotosController : ControllerBase
         return NoContent();
     }
 
-
-    // Mensageria 
-    //    var factory = new ConnectionFactory() { HostName = "localhost" };
-    //       using (var connection = factory.CreateConnection())
-    //       using (var channel = connection.CreateModel()) {
-    //          channel.QueueDeclare(queue: "moto_cadastrada", durable: false, exclusive: false, autoDelete: false, arguments: null);
-    //          var body = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(moto));
-    //channel.BasicPublish(exchange: "", routingKey: "moto_cadastrada", basicProperties: null, body: body);
-    //        }
-
 }
